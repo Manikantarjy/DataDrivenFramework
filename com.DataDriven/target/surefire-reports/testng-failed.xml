@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Data Driven Basics]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.DataDriven.listeners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="AddCustomerTest(failed)" verbose="0">
+    <classes>
+      <class name="com.DataDriven.testCases.AddCustomerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addCustomerTest" invocation-numbers="2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.DataDriven.testCases.AddCustomerTest -->
+    </classes>
+  </test> <!-- AddCustomerTest(failed) -->
+</suite> <!-- Failed suite [Data Driven Basics] -->
